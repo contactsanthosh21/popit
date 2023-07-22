@@ -1,0 +1,29 @@
+@import "../../variables.scss";
+
+.header {
+    padding: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+        text-decoration: none;
+        color: $font-color-black;
+        font-family: Poppins;
+    }
+
+    .header__logo {
+        img {
+            width: 11rem;
+        }
+    }
+
+    .header__nav {
+        display: flex;
+
+        .header__nav__nav-item {
+            margin: 0 2.25rem;
+        }
+    }
+
+}

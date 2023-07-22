@@ -1,0 +1,200 @@
+PopitStudio Website
+    Landing Page
+        Header
+            Logo
+            Nav Items
+                Projects
+                About
+                Contact Us
+        Banner
+            Secondary Text
+            Primary Text
+            Button: Contact Us
+        Projects Brief
+            Heading
+            Project Card #1
+                Image
+                Title
+                Description
+                Link to view 
+            Project Card #2
+                Image
+                Title
+                Description
+                Link to view
+            Link to view all case studies
+        Services
+            Heading
+            Service Card #1
+                Logo
+                Title
+                Description
+            Service Card #2
+                Logo
+                Title
+                Description
+            Service Card #3
+                Logo
+                Title
+                Description
+            Service Card #4
+                Logo
+                Title
+                Description
+            Link to view all case studies
+        Banner for quote
+            Quote with author
+            Description
+        How we do it
+            Heading (How do we do it?)
+            Card #1
+                Custom Card
+                    Image
+                    Title
+                    Description
+            Card #2
+                Custom Card
+                    Image
+                    Title
+                    Description
+            Card #3
+                Custom Card
+                    Image
+                    Title
+                    Description
+            Card #4
+                Custom Card
+                    Image
+                    Title
+                    Description
+        Contact Us
+            Socials
+                Social #1
+                    Logo
+                    Text
+                Social #2
+                    Logo
+                    Text
+                Social #3
+                    Logo
+                    Text
+                Social #4
+                    Logo
+                    Text
+            Divider
+            Form
+                Input
+                    Full Name
+                Input
+                    Email
+                Input
+                    Message
+                Submit
+                    Send
+    About Us
+        Header
+            Logo
+            Nav Items
+                Projects
+                About
+                Contact Us
+        Our Values
+            Title
+            Primary Text
+            Values
+                Value #1
+                    Logo
+                    Title
+                    Description
+                Value #2
+                    Logo
+                    Title
+                    Description
+                Value #3
+                    Logo
+                    Title
+                    Description
+                Value #4
+                    Logo
+                    Title
+                    Description
+                Value #5
+                    Logo
+                    Title
+                    Description
+                Value #6
+                    Logo
+                    Title
+                    Description
+        Banner for quote
+            Quote with author
+            Description
+        Meet the team
+            Title
+            Description
+            Members
+                Card #1
+                    Custom Card
+                        Image
+                        Title
+                        Subtitle
+                        Description
+                Card #2
+                    Custom Card
+                        Image
+                        Title
+                        Subtitle
+                        Description
+                Card #3
+                    Custom Card
+                        Image
+                        Title
+                        Subtitle
+                        Description
+        Contact Us
+            Socials
+                Social #1
+                    Logo
+                    Text
+                Social #2
+                    Logo
+                    Text
+                Social #3
+                    Logo
+                    Text
+                Social #4
+                    Logo
+                    Text
+            Divider
+            Form
+                Input
+                    Full Name
+                Input
+                    Email
+                Input
+                    Message
+                Submit
+                    Send
+    Projects
+        Heading
+        Project Cards
+            Project Card #1
+                Image - Background
+                Title
+                Description
+                Link
+            Project Card #2
+                Image - Background
+                Title
+                Description
+                Link
+            Project Card #3
+                Image - Background
+                Title
+                Description
+                Link
+            Project Card #4
+                Image - Background
+                Title
+                Description
+                Link
