@@ -1,14 +1,15 @@
 @import "../../variables.scss";
 
 .header {
-    padding: 2.5rem;
+    padding: 2.5rem 0;
+    position: sticky;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     a {
         text-decoration: none;
-        color: $font-color-black;
+        color: $color-black;
         font-family: Poppins;
     }
 
@@ -22,6 +23,7 @@
         display: flex;
 
         .header__nav__nav-item {
+            font-size: 1.1rem;
             margin: 0 2.25rem;
         }
     }

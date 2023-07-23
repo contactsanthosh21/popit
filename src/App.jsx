@@ -1,15 +1,22 @@
 import React from 'react'
 import {
-  Header
+  Header,
+  IntroBanner
 } from './sections';
 import './styles.scss'
 import backgroundImg from './assets/background-image.png'
 
 const App = () => {
   return (
-    
-    <div className='app' style={{backgroundImage: `url(${backgroundImg})`}}>
-        <Header />
+    <div className='container' style={{
+      backgroundImage: `url(${backgroundImg})`,
+      backgroundSize: `100% auto`,
+      backgroundRepeat: `no-repeat`
+    }}>
+      <div className='app'>
+          <Header />
+          <IntroBanner />
+      </div>
     </div>
   )
 }

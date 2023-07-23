@@ -1,9 +1,18 @@
 // TODO: check need for css-resets and css normalize
 * {
     margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
   }
 
 // app level styling guidelines here
-.app{
+.container {
     height: 100vh;
+    width: 100vw;
+}
+
+.app {
+  // height: 100%;
+  width: 90%;
+  margin: 0 auto;
 }
