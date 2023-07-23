@@ -1,0 +1,50 @@
+@import "../../variables.scss";
+
+.intro-banner {
+    width: 55rem;
+    padding: 5rem 0;
+
+    .intro-banner__secondary-text {
+        font-size: 2.25rem;
+        color: $color-black;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 4.55rem;
+    }
+
+    .intro-banner__primary-text {
+        color: $color-black;
+        font-size: 2.5rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 4.55rem;
+
+        .intro-banner__primary-text--highlighted{
+            color: $color-popit;
+        }
+    }
+
+    .intro-banner__button {
+        width: 10rem;
+        border-radius: 3.7rem;
+        border: 1.5px solid #EB004B;
+        background: #FFF3F7;
+        box-shadow: 0px 0px 6px 0px #EEC4D2;
+        margin-top: 1.8rem;
+        color: $color-popit;
+
+        &:hover {
+            color: #fff;
+            background: $color-popit;
+            cursor:pointer;
+
+            .intro-banner__button__icon {
+                fill: #fff;
+            }
+        }
+
+        .intro-banner__button__icon {
+            fill: $color-popit;
+        }
+    }
+}

@@ -1,6 +1,6 @@
 import React from 'react'
 import NavItem from './NavItem'
-import './header.scss'
+import './Header.scss'
 
 var appLogo = require('../../assets/app-logo.png');
 
@@ -8,7 +8,9 @@ const Header = () => {
   return (
     <div className='header'>
         <div className='header__logo app-logo'>
-            <img src={appLogo} alt="app logo" />
+            <a href="/">
+                <img src={appLogo} alt="app logo" />
+            </a>
         </div>
         <div className="header__nav">
             <NavItem
