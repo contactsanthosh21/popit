@@ -5,6 +5,7 @@ import {
 } from './sections';
 import './styles.scss'
 import backgroundImg from './assets/background-image.png'
+import ProjectsImpact from './sections/ProjectsImpact/ProjectsImpact';
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <div className='app'>
           <Header />
           <IntroBanner />
+          <ProjectsImpact />
       </div>
     </div>
   )
