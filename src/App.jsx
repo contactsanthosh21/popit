@@ -21,10 +21,10 @@ const App = () => {
           <IntroBanner />
       </div>
       <Quotes 
-      style ={{padding:'3rem 6rem',textAlign:'center'}} 
       quoteContent={quoteContent} 
       quoteAuthor={quoteAuthor} 
-      quoteDescription={quoteDescription} />
+      quoteDescription={quoteDescription}
+      />
     </div>
   )
 }

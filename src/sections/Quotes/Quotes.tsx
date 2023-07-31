@@ -9,11 +9,10 @@ const Quotes = ({
     style
 }) => {
   return (
-    <QuoteBanner 
-    className='quote-container'
-    style={style}
+    <QuoteBanner
+    className="quote-container"
+    style={{...style}}
     >
-    <div>
       <span className='quote-container__content'>
         {quoteContent}
       </span>
@@ -23,7 +22,6 @@ const Quotes = ({
       <p className='quote-container__description'>
         {quoteDescription}
       </p>
-    </div>
     </QuoteBanner>
   )
 }

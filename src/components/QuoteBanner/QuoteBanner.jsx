@@ -1,13 +1,11 @@
 import React from 'react'
 
-const QuoteBanner = ({children, className, style}) => {
+const QuoteBanner = ({children,className,style}) => {
   return (
     <div 
-    className={className} 
+    className={className}
     style={{
-        width: '100%',
-        background: '#000',
-        ...style
+       ...style
     }}
     >
         {children}
