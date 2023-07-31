@@ -6,8 +6,10 @@ import {
 import './styles.scss'
 import backgroundImg from './assets/background-image.png'
 import Quotes from './sections/Quotes/Quotes';
+import constants from './utils/constants';
 
 const App = () => {
+  const {quoteContent,quoteAuthor,quoteDescription} = constants.homepage;
   return (
     <div className='container' style={{
       backgroundImage: `url(${backgroundImg})`,
@@ -18,7 +20,11 @@ const App = () => {
           <Header />
           <IntroBanner />
       </div>
-      <Quotes />
+      <Quotes 
+      style ={{padding:'3rem 6rem',textAlign:'center'}} 
+      quoteContent={quoteContent} 
+      quoteAuthor={quoteAuthor} 
+      quoteDescription={quoteDescription} />
     </div>
   )
 }

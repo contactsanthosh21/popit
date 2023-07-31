@@ -2,24 +2,28 @@ import React from 'react'
 import QuoteBanner from '../../components/QuoteBanner/QuoteBanner'
 import './Quotes.scss';
 
-const Quotes = () => {
+const Quotes = ({
+    quoteContent,
+    quoteAuthor,
+    quoteDescription,
+    style
+}) => {
   return (
     <QuoteBanner 
     className='quote-container'
+    style={style}
     >
     <div>
       <span className='quote-container__content'>
-        Simplicity is the ultimate sophistication
+        {quoteContent}
       </span>
       <span className='quote-container__author'>
-        - Leonardo Da Vinci
+        {quoteAuthor}
       </span>
       <p className='quote-container__description'>
-        As designers we idolise the Quotee & always aim to achieve this, 
-        simplify problems .. simplify solutions and life of our end users ..
+        {quoteDescription}
       </p>
     </div>
-      
     </QuoteBanner>
   )
 }
