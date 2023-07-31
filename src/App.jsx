@@ -5,6 +5,7 @@ import {
 } from './sections';
 import './styles.scss'
 import backgroundImg from './assets/background-image.png'
+import Quotes from './sections/Quotes/Quotes';
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
           <Header />
           <IntroBanner />
       </div>
+      <Quotes />
     </div>
   )
 }
