@@ -20,7 +20,7 @@ const App = () => {
           <Header />
           <IntroBanner />
       </div>
-      <Quotes 
+      <Quotes
       quoteContent={quoteContent} 
       quoteAuthor={quoteAuthor} 
       quoteDescription={quoteDescription}

@@ -6,20 +6,19 @@ const Quotes = ({
     quoteContent,
     quoteAuthor,
     quoteDescription,
-    style
+    className
 }) => {
   return (
     <QuoteBanner
-    className="quote-container"
-    style={{...style}}
+    className={className}
     >
-      <span className='quote-container__content'>
+      <span className='quote-content'>
         {quoteContent}
       </span>
-      <span className='quote-container__author'>
+      <span className='quote-author'>
         {quoteAuthor}
       </span>
-      <p className='quote-container__description'>
+      <p className='quote-description'>
         {quoteDescription}
       </p>
     </QuoteBanner>
