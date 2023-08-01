@@ -1,21 +1,15 @@
-import React from 'react'
+import React from "react";
+import "./Heading.scss";
 
-const Heading = ({children, className, style}) => {
-  return (
-    <p
-    className={className} 
-    style={{
-        color: '#333', 
-        fontSize: '2rem' , 
-        fontStyle: 'normal',
-        textAlign: 'center',
-        marginTop: '14rem',
-        fontWeight: 700,
-        ...style}}
-    >
-        {children}
-    </p>
-  )
-}
+const Heading = ({ text, className, size }) => {
+  switch(size) {
+    case "large": size = "large"; break;
+    case "medium": size = "medium"; break;
+    case "small": size = "small"; break;
+    default: size = "large"; break;
+  }
+  className += ` heading ${size}`;
+  return <div className={className}>{text}</div>;
+};
 
-export default Heading
+export default Heading;

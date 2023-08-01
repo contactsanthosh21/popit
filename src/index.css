@@ -1,7 +1,7 @@
 /* this is default css file similar to index.js */
 
 @font-face {
-    font-family: 'Poppins';
+    font-family: 'Poppins', serif;
     src: url(./fonts/MyFont.woff) format('woff');
     /* other formats include: 'woff2', 'truetype, 'opentype',
                               'embedded-opentype', and 'svg' */

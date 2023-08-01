@@ -1,0 +1,27 @@
+.offering-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-width: 30rem;
+    width: 45%;
+    margin: 2rem;
+    flex: 1;
+    flex-wrap: wrap;
+    
+
+    .offering-card__heading {
+        margin-bottom: 0.25rem;
+        color: #140107
+    }
+
+    .offering-card__rectangle {
+        width: 2.625rem;
+        height: 2.625rem;
+        flex-shrink: 0;
+        border-radius: 0.25rem;
+        border: 0.0625rem solid #D9CACF;
+        background: rgba(255, 238, 243, 0.40);
+        margin-bottom: 0.25rem;
+    }
+}

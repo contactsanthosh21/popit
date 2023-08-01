@@ -1,0 +1,20 @@
+@import "../../variables.scss";
+
+.offerings {
+    padding: 2.5rem 0;
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .offerings__heading {
+        margin-bottom: 2.5rem;
+    }
+
+    .offerings__offering-cards {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

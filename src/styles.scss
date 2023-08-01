@@ -5,14 +5,24 @@
     font-family: Poppins;
   }
 
-// app level styling guidelines here
-.container {
-    height: 100vh;
-    width: 100vw;
+p {
+  color: #000;
+  font-family: Poppins;
+  font-size: 1.3125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.5rem; /* 190.476% */
 }
 
+.container {
+    width: 100vw;
+    background-image: url('./assets/background-image.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+// app level styling guidelines here
 .app {
-  // height: 100%;
   width: 90%;
   margin: 0 auto;
 }
