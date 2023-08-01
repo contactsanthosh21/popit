@@ -25,7 +25,7 @@ const ProjectsImpact = () => {
                     instant high conversion store front and one of the best live class experiences. With 
                     an amazing founding team it has a great potential to generate $1.2B in revenues.
                     </p>
-                    <ViewLink />
+                    <ViewLink style={{position:'absolute',bottom:0}}/>
                 </div> 
             </div>
             <div className='projects-impact__wrapper'>
@@ -39,7 +39,7 @@ const ProjectsImpact = () => {
                         ControlMap was built for both beginners and experienced compliance teams. Beginners can prepare for their first audit by starting with a preset workflow that guides them through the process, complete with templates for controls, policies, and procedures
 
                         </p>
-                        <ViewLink />
+                        <ViewLink style={{position:'absolute',bottom:0}}/>
                     </div> 
             </div>
         <Button 
