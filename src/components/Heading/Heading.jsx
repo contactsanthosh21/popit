@@ -8,6 +8,8 @@ const Heading = ({children, className, style}) => {
         color: '#333', 
         fontSize: '2rem' , 
         fontStyle: 'normal',
+        textAlign: 'center',
+        marginTop: '14rem',
         fontWeight: 700,
         ...style}}
     >

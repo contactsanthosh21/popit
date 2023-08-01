@@ -11,10 +11,9 @@ var controlLogo = require('../../assets/impact-project-2.png');
 
 const ProjectsImpact = () => {
   return (
-    <div className='projects-impact'>
+    <>
         <Heading className='projects-impact__heading'>The impact we have created for our clients</Heading>
-        <div className='projects-impact__wrapper'>
-            <div className='projects-impact__wrapper--container'>
+            <div className='projects-impact__wrapper'>
                 <div className='column'>
                     <ImageCard className='image' src={zomoLogo} alt= "Zomo.Fit" />
                 </div>
@@ -29,7 +28,7 @@ const ProjectsImpact = () => {
                     <ViewLink />
                 </div> 
             </div>
-            <div className='projects-impact__wrapper--container'>
+            <div className='projects-impact__wrapper'>
                     <div className='column'>
                         <ImageCard className='image' src={controlLogo} alt= "Zomo.Fit" />
                     </div>
@@ -43,16 +42,13 @@ const ProjectsImpact = () => {
                         <ViewLink />
                     </div> 
             </div>
-         </div>
-         <div className='projects-impact__button'>
-            <Button 
-                className='projects-impact__button--child'
-                href="#project-page"
-            >
-                View All casestudies
-            </Button>
-        </div>
-    </div>
+        <Button 
+            className='projects-impact__button'
+            href="#project-page"
+        >
+            View All casestudies
+        </Button>
+    </>
   )
 }
 

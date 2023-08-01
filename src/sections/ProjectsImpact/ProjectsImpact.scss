@@ -1,58 +1,48 @@
 @import "../../variables.scss";
 
-.projects-impact{
-    .projects-impact__heading{
-        text-align: center;
-        margin-top: 14rem;
-    }
-    .projects-impact__wrapper--container{
-            display: flex;
-            flex-wrap:wrap;
-            width: 100%;
-            gap:3.5rem;
-            margin-top: 5rem;
-            justify-content: center;
-            .column{
-                p.description{
-                    width: 35rem;
-                    font-size: 1rem;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 2rem;
-                    margin-bottom: 2.5rem;
-                }
-                .image{
-                    width:35rem;
-                    border-radius: 0.5rem;
-                }
-                .project-impact__view__icon{
-                    fill: $color-popit;
-                    vertical-align: middle;
-                    width: 24px;
-                    height: 24px;
-                }
-            }
-            .column:first-child{
-                display: flex;
-            }
-    }
-    .projects-impact__button{
+.projects-impact__wrapper{
         display: flex;
+        flex-wrap:wrap;
+        width: 100%;
+        gap:3.5rem;
+        margin-top: 5rem;
         justify-content: center;
-        .projects-impact__button--child{
-            width: 14rem;
-            border-radius: 3.7rem;
-            border: 1.5px solid $color-popit;
-            background-color: $color-popit;
-            margin-top: 6rem;
-            color: $color-white;
-            text-align: center;
-            transition: background-color 300ms ease-out;
-            &:hover{
-                background-color: $color-white;
-                color: $color-popit;
+        .column{
+            p.description{
+                width: 35rem;
+                font-size: 1rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 2rem;
+                margin-bottom: 2.5rem;
+            }
+            .image{
+                width:35rem;
+                border-radius: 0.5rem;
+            }
+            .project-impact__view__icon{
+                fill: $color-popit;
+                vertical-align: middle;
+                width: 24px;
+                height: 24px;
             }
         }
+        .column:first-child{
+            display: flex;
+        }
+}
+.projects-impact__button{
+    width: 14rem;
+    border-radius: 3.7rem;
+    border: 1.5px solid $color-popit;
+    background-color: $color-popit;
+    margin: 6rem auto 0;
+    color: $color-white;
+    text-align: center;
+    transition: background-color 300ms ease-out;
+    &:hover{
+        background-color: $color-white;
+        color: $color-popit;
     }
 }
 
@@ -61,15 +51,13 @@
   and (min-device-width: 1200px) 
   and (max-device-width: 1330px) 
   and (-webkit-min-device-pixel-ratio: 1) { 
-    .projects-impact{
-        .projects-impact__wrapper--container{
-            .column{
-                p.description{
-                    width: 30rem;
-                }
-                .image{
-                    width:30rem;
-                }
+    .projects-impact__wrapper{
+        .column{
+            p.description{
+                width: 30rem;
+            }
+            .image{
+                width:30rem;
             }
         }
     }
