@@ -7,6 +7,7 @@ import './styles.scss'
 import backgroundImg from './assets/background-image.png'
 import Quotes from './sections/Quotes/Quotes';
 import constants from './utils/constants';
+import ProjectsImpact from './sections/ProjectsImpact/ProjectsImpact';
 
 const App = () => {
   const {quoteContent,quoteAuthor,quoteDescription} = constants.homepage;
@@ -19,6 +20,7 @@ const App = () => {
       <div className='app'>
           <Header />
           <IntroBanner />
+          <ProjectsImpact />
       </div>
       <Quotes
       quoteContent={quoteContent} 

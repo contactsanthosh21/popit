@@ -1,0 +1,71 @@
+@import "../../variables.scss";
+
+.projects-impact__wrapper{
+        display: flex;
+        flex-wrap:wrap;
+        width: 100%;
+        gap:3.5rem;
+        margin-top: 5rem;
+        justify-content: center;
+        &:hover{
+            background: $color-white;
+            box-shadow: 0px 0px 34px 0px #F1DDE4;
+            padding: 3rem 2rem;
+            border-radius: 1.2rem;
+        }
+        .column{
+            position: relative;
+            p.description{
+                width: 36rem;
+                font-size: 1rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 2rem;
+                margin-bottom: 2.5rem;
+            }
+            .image{
+                width:40rem;
+                border-radius: 0.5rem;
+            }
+            .project-impact__view__icon{
+                fill: $color-popit;
+                vertical-align: middle;
+                width: 24px;
+                height: 24px;
+            }
+        }
+        .column:first-child{
+            display: flex;
+        }
+}
+.projects-impact__button{
+    width: 14rem;
+    border-radius: 3.7rem;
+    border: 1.5px solid $color-popit;
+    background-color: $color-popit;
+    margin: 6rem auto 0;
+    color: $color-white;
+    text-align: center;
+    transition: background-color 300ms ease-out;
+    &:hover{
+        background-color: $color-white;
+        color: $color-popit;
+    }
+}
+
+
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1380px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    .projects-impact__wrapper{
+        .column{
+            p.description{
+                width: 30rem;
+            }
+            .image{
+                width:30rem;
+            }
+        }
+    }
+}
