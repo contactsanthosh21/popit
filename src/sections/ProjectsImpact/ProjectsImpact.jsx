@@ -11,7 +11,7 @@ var controlLogo = require('../../assets/impact-project-2.png');
 
 const ProjectsImpact = () => {
   return (
-    <>
+    <div className='projects-impact'>
         <Heading className='projects-impact__heading'>The impact we have created for our clients</Heading>
             <div className='projects-impact__wrapper'>
                 <div className='column'>
@@ -48,7 +48,7 @@ const ProjectsImpact = () => {
         >
             View All casestudies
         </Button>
-    </>
+    </div>
   )
 }
 

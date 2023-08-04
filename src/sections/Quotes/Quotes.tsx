@@ -1,15 +1,15 @@
 import React from 'react'
-import QuoteBanner from '../../components/QuoteBanner/QuoteBanner'
 import './Quotes.scss';
 
-const Quotes = ({
+const Quote = ({
     quoteContent,
     quoteAuthor,
     quoteDescription,
-    className
+    className = ''
 }) => {
+  className = 'quotes ' + className;
   return (
-    <QuoteBanner
+    <div 
     className={className}
     >
       <span className='quote-content'>
@@ -21,8 +21,8 @@ const Quotes = ({
       <p className='quote-description'>
         {quoteDescription}
       </p>
-    </QuoteBanner>
+    </div>
   )
 }
 
-export default Quotes
+export default Quote
