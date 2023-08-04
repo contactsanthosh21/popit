@@ -5,7 +5,7 @@ import {
   Offerings
 } from './sections';
 import './styles.scss'
-import Quotes from './sections/Quotes/Quotes';
+import Quote from './sections/Quotes/Quotes';
 import constants from './utils/constants';
 import ProjectsImpact from './sections/ProjectsImpact/ProjectsImpact';
 // import backgroundImg from './assets/background-image.png'
@@ -19,12 +19,12 @@ const App = () => {
           <IntroBanner />
           <ProjectsImpact />
           <Offerings />
+          <Quote
+          quoteContent={quoteContent} 
+          quoteAuthor={quoteAuthor} 
+          quoteDescription={quoteDescription}
+          />
       </div>
-      <Quotes
-      quoteContent={quoteContent} 
-      quoteAuthor={quoteAuthor} 
-      quoteDescription={quoteDescription}
-      />
     </div>
   )
 }

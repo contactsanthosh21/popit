@@ -6,7 +6,7 @@ const OfferingCard = ({heading, text}) => {
   return (
     <div className='offering-card'>
         <div className='offering-card__rectangle'></div>
-        <Heading className='offering-card__heading' text={heading} size='medium'/>
+        <Heading className='offering-card__heading' size='medium'>{heading}</Heading>
         <p className='offering-card__text'>{text}</p>
     </div>
   )

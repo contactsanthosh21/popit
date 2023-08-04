@@ -6,7 +6,7 @@ import "./Offerings.scss";
 const Offerings = () => {
   return (
     <div className='offerings'>
-        <Heading className='offerings__heading' text="What we offer" />
+        <Heading className='offerings__heading'>What we offer</Heading>
         <div className='offerings__offering-cards'>
             <OfferingCard 
                 heading="End to end UX consulting"
