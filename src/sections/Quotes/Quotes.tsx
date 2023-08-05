@@ -7,7 +7,7 @@ const Quote = ({
     quoteDescription,
     className = ''
 }) => {
-  className = 'quotes ' + className;
+  className = 'quotes section ' + className;
   return (
     <div 
     className={className}

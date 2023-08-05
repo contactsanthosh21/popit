@@ -2,27 +2,26 @@ import React from 'react'
 import {
   Header,
   IntroBanner,
-  Offerings
+  Offerings,
+  ProjectsImpact,
+  Quote
 } from './sections';
-import './styles.scss'
-import Quote from './sections/Quotes/Quotes';
+import './styles.scss';
 import constants from './utils/constants';
-import ProjectsImpact from './sections/ProjectsImpact/ProjectsImpact';
-// import backgroundImg from './assets/background-image.png'
 
 const App = () => {
   const {quoteContent,quoteAuthor,quoteDescription} = constants.homepage;
   return (
-    <div className='container'>
+    <div className='container' id="container" >
+      <Header/>
       <div className='app'>
-          <Header />
           <IntroBanner />
           <ProjectsImpact />
           <Offerings />
           <Quote
-          quoteContent={quoteContent} 
-          quoteAuthor={quoteAuthor} 
-          quoteDescription={quoteDescription}
+            quoteContent={quoteContent} 
+            quoteAuthor={quoteAuthor} 
+            quoteDescription={quoteDescription}
           />
       </div>
     </div>
