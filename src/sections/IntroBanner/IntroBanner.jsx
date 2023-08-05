@@ -5,7 +5,7 @@ import ArrowIcon from '../../assets/ArrowIcon';
 
 const IntroBanner = () => {
   return (
-    <div className='intro-banner'>
+    <div className='intro-banner section'>
         <p className='intro-banner__secondary-text'>Strategize.Design.Evolve</p>
         <p className="intro-banner__primary-text">We are <span className='intro-banner__primary-text--highlighted'>Popit studio</span><br/>
 a UI/UX design studio crafting digital products, services & experiences.</p>

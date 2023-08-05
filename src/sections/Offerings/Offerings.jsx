@@ -5,7 +5,7 @@ import "./Offerings.scss";
 
 const Offerings = () => {
   return (
-    <div className='offerings'>
+    <div className='offerings section'>
         <Heading className='offerings__heading'>What we offer</Heading>
         <div className='offerings__offering-cards'>
             <OfferingCard 
