@@ -8,8 +8,8 @@ const PlanningCard = ({image,title,description, children}) => {
   return (
     <>
       <div className='planning-card' style={style} onMouseEnter={e => {
-              setStyle({display: 'none'});
-              setStyleHover({display: 'block'});
+        setStyle({display: 'none'});
+        setStyleHover({display: 'block'});
       }}>
         <img src={image}/>
         <h3 >{title}</h3>

@@ -13,6 +13,7 @@
     z-index: 5;
     transition: 0.3s;
     img{
+        pointer-events: none;
         width: 12rem;
         position: absolute;
         right: -2rem;
