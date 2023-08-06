@@ -8,6 +8,7 @@ import {
 } from './sections';
 import './styles.scss';
 import constants from './utils/constants';
+import Planning from './sections/Planning/Planning';
 
 const App = () => {
   const {quoteContent,quoteAuthor,quoteDescription} = constants.homepage;
@@ -23,6 +24,7 @@ const App = () => {
             quoteAuthor={quoteAuthor} 
             quoteDescription={quoteDescription}
           />
+          <Planning />
       </div>
     </div>
   )

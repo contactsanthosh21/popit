@@ -3,26 +3,30 @@ import Heading from '../../components/Heading/Heading';
 import OfferingCard from './OfferingCard';
 import "./Offerings.scss";
 
+import constants from '../../utils/constants';
+
 const Offerings = () => {
+
+ const {offeringOne,offeringTwo,offeringThree,offeringFour} = constants.offering;
   return (
     <div className='offerings section'>
         <Heading className='offerings__heading'>What we offer</Heading>
         <div className='offerings__offering-cards'>
             <OfferingCard 
-                heading="End to end UX consulting"
-                text="From Discovery of the problem to Research, Strategy, Design and till Delivery of the product."
+                heading={offeringOne.title}
+                text={offeringOne.description}
             />
             <OfferingCard 
-                heading="Branding & Illustrations"
-                text="Creating distinct Identity and custom illustrations for Products & Services"
+                 heading={offeringTwo.title}
+                 text={offeringTwo.description}
             />
             <OfferingCard 
-                heading="Strategic consulting"
-                text="Solve Business problems with a User Centric mindset to help achieve your success metrics"
+                 heading={offeringThree.title}
+                 text={offeringThree.description}
             />
             <OfferingCard 
-                heading="Design Systems"
-                text="Design complete set of standards, components & patterns , to empower your design to scale flexibly"
+                heading={offeringFour.title}
+                text={offeringFour.description}
             />
         </div>
     </div>
