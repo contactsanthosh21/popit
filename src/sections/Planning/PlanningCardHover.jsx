@@ -1,8 +1,9 @@
 import React from 'react'
 import './PlanningCardHover.scss';
 
-const PlanningCardHover = ({children,className,style,setStyle,setStyleHover}) => {
+const PlanningCardHover = ({children,className,toggle,setToggle}) => {
   className = 'planning-card__hover ' + className;
+  style =  toggle ? {display: 'block'} : {display : 'none'}; 
   return (
     <div className={className}
     style={{
@@ -19,8 +20,7 @@ const PlanningCardHover = ({children,className,style,setStyle,setStyleHover}) =>
         ...style
     }}
     onMouseLeave={e => {
-        setStyle({display: 'block'});
-        setStyleHover({display: 'none'});
+        setToggle(false);
     }}
     >
         {children}

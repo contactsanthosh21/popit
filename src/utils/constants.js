@@ -4,8 +4,8 @@ const constants = {
         quoteAuthor: "- Leonardo Da Vinci",
         quoteDescription: "As designers we idolise the Quotee & always aim to achieve this, simplify problems .. simplify solutions and life of our end users .."
     },
-    planning:{
-        planningOne : { 
+    planning:[
+        { 
             title: 'DISCOVER',
             description : "Open minded learning process to understand the User, the Market & the Business",
             hoverChildren: [   
@@ -17,9 +17,10 @@ const constants = {
                 "Empathy Map",
                 "Story Board",
                 "Service Blueprint"
-            ]
+            ],
+            image: require("../assets/planning-1.png")
         },
-        planningTwo : { 
+        { 
             title: 'DEFINE',
             description : "Analyse patterns & draw insights for UX Mental Models and Business Strategy",
             hoverChildren: [   
@@ -29,9 +30,10 @@ const constants = {
                 "UX Strategy",
                 "Task Flows",
                 "Ux Architecture"
-            ]
+            ],
+            image: require("../assets/planning-2.png")
         },
-        planningThree : { 
+        { 
             title: 'DESIGN',
             description : "Translate Strategy to Ideas, Interactions, Prototypes & Visual identity",
             hoverChildren : [
@@ -41,9 +43,10 @@ const constants = {
                 "Visual Designs",
                 "Branding",
                 "Illustrations"
-            ]
+            ],
+            image: require("../assets/planning-3.png")
         },
-        planningFour : { 
+        { 
             title: 'DELIVER',
             description : "Collaborate to build the product, test with real users and evolve.",
             hoverChildren: [
@@ -52,27 +55,28 @@ const constants = {
                 "Implementation support",
                 "Usability Testing",
                 "Documentation" 
-            ]
+            ],
+            image: require("../assets/planning-4.png")
         }
-    },
-    offering : {
-        offeringOne:{
+    ],
+    offering : [
+        {
             title:"End to end UX consulting",
             description: "From Discovery of the problem to Research, Strategy, Design and till Delivery of the product."
         },
-        offeringTwo:{
+        {
             title:"Branding & Illustrations",
             description: "Creating distinct Identity and custom illustrations for Products & Services"
         },
-        offeringThree:{
+        {
             title:"Strategic consulting",
             description: "Solve Business problems with a User Centric mindset to help achieve your success metrics"
         },
-        offeringFour:{
+        {
             title:"Design Systems",
             description: "Design complete set of standards, components & patterns , to empower your design to scale flexibly"
         }
-    }
+    ]
 }
 
 export default constants;
