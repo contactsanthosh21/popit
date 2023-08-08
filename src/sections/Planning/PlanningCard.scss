@@ -1,0 +1,40 @@
+@import "../../variables.scss";
+
+.planning-card{
+    background-color: $color-white;
+    border-radius: 1rem;
+    border: 0.0625rem solid rgba(235, 235, 235, 1);
+    box-shadow: 0rem 0.25rem 1.4rem 0rem rgba(241, 221, 228, 0.5);
+    width: 21rem;
+    position: relative;
+    margin: 5rem 0;
+    padding: 1.5rem;
+    cursor: pointer;
+    z-index: 5;
+    transition: 0.3s;
+    img{
+        pointer-events: none;
+        width: 12rem;
+        position: absolute;
+        right: -2rem;
+        top: -3.5rem; 
+    }
+
+    &:nth-child(3){
+        img{
+            right: -3rem;
+        }
+    }
+
+    h3{
+        color: rgba(92, 7, 34, 1);
+        font-size: 1.3rem;
+        margin-top: 8rem;
+    }
+    p{
+        color: #000;
+        margin-top: 0.5rem;
+        line-height: 2rem;
+        font-size: 1.05rem;
+    }
+}
