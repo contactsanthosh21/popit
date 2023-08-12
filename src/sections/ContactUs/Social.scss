@@ -1,0 +1,15 @@
+@import '../../variables.scss';
+
+.social {
+    display: flex;
+    column-gap: 0.5rem;
+    color: #FAFAFA;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: $font-weight-500;
+    line-height: 1.875rem; /* 166.667% */
+    
+    img {
+        width: 2rem;
+    }
+}

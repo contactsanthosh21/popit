@@ -4,7 +4,8 @@ import {
   IntroBanner,
   Offerings,
   ProjectsImpact,
-  Quote
+  Quote,
+  ContactUs
 } from './sections';
 import './styles.scss';
 import constants from './utils/constants';
@@ -25,6 +26,7 @@ const App = () => {
             quoteDescription={quoteDescription}
           />
           <Planning />
+          <ContactUs />
       </div>
     </div>
   )

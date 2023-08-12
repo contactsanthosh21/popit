@@ -13,7 +13,7 @@
     align-items: center;
     color: transparent;
 
-    width: 100vw;
+    width: 100%;
     left: calc(-50vw + 50%);
 
     -webkit-transition: all 300ms linear;
@@ -54,7 +54,7 @@
     background-color: $color-white;
     z-index: 5;
 
-    width: 100vw;
+    width: 100%;
     left: calc(-50vw + 50%);
 
     -webkit-transition: all 300ms linear;
