@@ -1,7 +1,7 @@
 import React from "react";
 
-const Button = ({ children, href, className, style, type = "link" }) => {
-  return type === "link" ? (
+const Button = ({ children, href, className, style, behaviour = "link", type }) => {
+  return behaviour === "link" ? (
     <a
       className={className}
       style={{
@@ -19,7 +19,7 @@ const Button = ({ children, href, className, style, type = "link" }) => {
       {children}
     </a>
   ) : (
-    <div
+    <button
       className={className}
       style={{
         minWidth: "fit-content",
@@ -31,9 +31,10 @@ const Button = ({ children, href, className, style, type = "link" }) => {
         borderRadius: "3.7rem",
         ...style,
       }}
+      type = {type ? type : undefined}
     >
       {children}
-    </div>
+    </button>
   );
 };
 

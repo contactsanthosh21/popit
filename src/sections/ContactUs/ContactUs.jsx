@@ -9,7 +9,51 @@ import emailIcon from '../../svg/emailIcon.svg';
 import linkedinIcon from '../../svg/linkedinIcon.svg';
 import instagramIcon from '../../svg/instagramIcon.svg';
 
+function setCursorToProgress(){
+  document.body.style.cursor = 'progress'
+}
+
+function setCursorToNormal(){
+  document.body.style.cursor = 'default'
+}
+
+function useEmail(formId){
+  const [error, setError] = React.useState(false);
+  
+  function onSubmitHandler(e){
+    e.preventDefault();
+    const form = document.getElementById(formId)
+    const formData = new FormData(form)
+    const url = 'https://formsubmit.co/72bebc68699d2efa6a8744eabeb45b2d';
+    setCursorToProgress();
+    fetch(
+      url,
+      {
+        method: 'POST',
+        body: formData
+      }
+    )
+      .then(() => {
+        console.log('successfully sent message to popit');
+        form.reset()
+      })
+      .catch(e => {
+        console.log('failed to send message with error ', e);
+        setError(e)
+      })
+      .finally(setCursorToNormal)
+      return; 
+  }
+
+  return {
+    error,
+    onSubmitHandler
+  }
+}
+
 const ContactUs = () => {
+  const {error, onSubmitHandler} = useEmail("homepage-contact-us-form");
+
   return (
     <div className='contact-us section' id="contact-us">
       <div className="contact-us__info">
@@ -24,26 +68,30 @@ const ContactUs = () => {
       <div className="contact-us__separator">
       </div>
       <div className="contact-us__form">
-      <form className="contact-us__form--form">
-        <label for='name'>
+      <form className="contact-us__form--form" id="homepage-contact-us-form" onSubmit={onSubmitHandler}>
+        <label htmlFor='name'>
           Full Name
         </label>
         <input type="text" name="name" id="name"/>
-        <label for='email'>
+        <label htmlFor='email'>
           Email ID
         </label>
         <input type="email" name="email" id="email"/>
-        <label for='message'>
+        <label htmlFor='message'>
           Message
         </label>
         <textarea 
-          class="input" 
+          className="input" 
           placeholder="Reach us out for projects , proposals etc.." 
           id="message" 
+          name="message"
         />
+        <input type="hidden" name="_subject" value="New message from a visitor" />
+        <input type="hidden" name="_captcha" value="false" />
         <Button 
             className='contact-us__form--button'
             href="#contact-us"
+            behaviour="button"
             type="submit"
             style={{
               border: "1px solid white",
@@ -52,7 +100,8 @@ const ContactUs = () => {
               marginLeft: "auto",
               marginTop: "1.5625rem",
               border: "1.5px solid #CDB447",
-              color: "#CDB447"
+              color: "#CDB447",
+              background: "transparent"
             }}
         >
             Send
