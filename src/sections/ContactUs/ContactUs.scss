@@ -1,0 +1,138 @@
+@import '../../variables.scss';
+
+.contact-us {
+    // background-color: rgb(51, 51, 51);
+    border: solid black;
+    border-radius: 3.125rem;
+    box-shadow: 0.00px 1.00px 4px 0px rgba(51,51,51,0.6);
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.30));
+    padding: 4.25rem 5.375rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    // todo: this is not showing, make it show over the background-color
+    background: url('../../svg/wigglylines.svg'), rgb(51, 51, 51);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+
+    .contact-us__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 1.625rem;
+
+        .contact-us__info--heading {
+            color: #CDB447;
+            font-family: Poppins;
+            font-size: 2.5rem;
+            font-style: normal;
+            font-weight: $font-weight-bold;
+            line-height: normal;
+        }
+
+        .contact-us__info--socials{
+            display: flex;
+            flex-direction: column;
+            row-gap: 1.625rem;
+        }
+    }
+
+    .contact-us__separator {
+        width: 1px;
+        height: 228px;
+        background: rgba(255, 255, 255, 0.15);
+        margin: auto 0;
+    }
+
+    .contact-us__form {
+        label, input {
+            display: block;
+        }
+
+        label {
+            color: #FAFAFA;
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: $font-weight-500;
+            line-height: 1.875rem; /* 187.5% */
+            margin-top: 1rem;
+        }
+
+        input:-internal-autofill-selected {
+            appearance: menulist-button;
+            background-image: none !important;
+            border-radius: 8px;
+            background-color: #494949;
+            color: white !important;
+            border: none;
+        }
+        
+
+        input, input:hover, input:focus, input:-webkit-autofill,
+        input:-webkit-autofill:hover, 
+        input:-webkit-autofill:focus, 
+        input:-webkit-autofill:active,
+        input, .input {
+            border-radius: 0.5rem;
+            background: #494949;
+            width: 31.625rem;
+            height: 2.75rem;
+            color: white;
+            border: none;
+            padding: 1.25rem;
+            resize: none;
+
+            &:focus-visible {
+                outline: none;
+            }
+
+            &:invalid {
+                border-color: rgb(255, 64, 64);
+                border-style: solid;
+                border-width: 0 0 0.125rem
+            }
+
+            &::-webkit-input-placeholder, &:-ms-input-placeholder, &::placeholder {
+                color: #969696;
+                // todo: ensure font is correctly loaded and added here
+                font-family: Inter;
+                font-size: 1rem;
+                font-style: normal;
+                font-weight: $font-weight-normal;
+                line-height: 1.875rem; /* 187.5% */
+            }
+        }
+
+        #message {
+            height: 7.75rem;
+            flex-shrink: 0;
+            white-space: pre-wrap;
+        }
+
+        &:hover {
+            cursor:pointer;
+        }
+    }
+
+    @media only screen and (max-width: 1000px) {
+        flex-direction: column;
+        row-gap: 2.5625rem;
+        padding: 2.625rem 1.625rem;
+
+        .contact-us__info {
+            width: 100%;
+        }
+
+        .contact-us__separator {
+            display: none;
+        }
+
+        .contact-us__form {
+            width: 100%;
+
+            input, label, textarea, .input {
+                width: 100%;
+            }
+        }
+    }
+}

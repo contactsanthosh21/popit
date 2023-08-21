@@ -1,22 +1,41 @@
-import React from 'react'
+import React from "react";
 
-const Button = ({children, href, className, style}) => {
-  return (
-    <a 
-    className={className} 
-    style={{
-        minWidth: 'fit-content', 
-        height: '2.75rem' , 
-        display:"flex",
+const Button = ({ children, href, className, style, behaviour = "link", type }) => {
+  return behaviour === "link" ? (
+    <a
+      className={className}
+      style={{
+        minWidth: "fit-content",
+        height: "2.75rem",
+        display: "flex",
         alignItems: "center",
         justifyContent: "space-evenly",
         textDecoration: "none",
-        ...style}}
-    href={href}
+        borderRadius: "3.7rem",
+        ...style,
+      }}
+      href={href? href: "#"}
     >
-            {children}
+      {children}
     </a>
-  )
-}
+  ) : (
+    <button
+      className={className}
+      style={{
+        minWidth: "fit-content",
+        height: "2.75rem",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "space-evenly",
+        textDecoration: "none",
+        borderRadius: "3.7rem",
+        ...style,
+      }}
+      type = {type ? type : undefined}
+    >
+      {children}
+    </button>
+  );
+};
 
-export default Button
+export default Button;

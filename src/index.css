@@ -6,3 +6,7 @@
     /* other formats include: 'woff2', 'truetype, 'opentype',
                               'embedded-opentype', and 'svg' */
   }
+
+body.waiting * {
+    cursor: progress !important;
+}
