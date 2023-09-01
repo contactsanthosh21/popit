@@ -5,3 +5,4 @@ export { default as Offerings } from './Offerings/Offerings';
 export { default as ProjectsImpact } from './ProjectsImpact/ProjectsImpact';
 export { default as Quote } from './Quotes/Quotes';
 export { default as ContactUs } from './ContactUs/ContactUs';
+export { default as Planning } from './Planning/Planning';

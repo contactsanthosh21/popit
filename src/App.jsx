@@ -5,30 +5,38 @@ import {
   Offerings,
   ProjectsImpact,
   Quote,
-  ContactUs
+  ContactUs,
+  Planning
 } from './sections';
 import './styles.scss';
+import { Router, Route } from './modules/Router';
 import constants from './utils/constants';
-import Planning from './sections/Planning/Planning';
 
 const App = () => {
   const {quoteContent,quoteAuthor,quoteDescription} = constants.homepage;
   return (
-    <div className='container' id="container" >
-      <Header/>
-      <div className='app'>
-          <IntroBanner />
-          <ProjectsImpact />
-          <Offerings />
-          <Quote
-            quoteContent={quoteContent} 
-            quoteAuthor={quoteAuthor} 
-            quoteDescription={quoteDescription}
-          />
-          <Planning />
-          <ContactUs />
+    <Router>
+      <div className='container' id="container" >
+        <Header/>
+        <Route path="/">
+          <div className='app'>
+              <IntroBanner />
+              <ProjectsImpact />
+              <Offerings />
+              <Quote
+                quoteContent={quoteContent} 
+                quoteAuthor={quoteAuthor} 
+                quoteDescription={quoteDescription}
+              />
+              <Planning />
+              <ContactUs />
+          </div>
+        </Route>
+        <Route path="/about">
+          <h1>About Us (work in progress)</h1>
+        </Route>
       </div>
-    </div>
+    </Router>
   )
 }
 
