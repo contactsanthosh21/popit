@@ -13,7 +13,7 @@ const ViewLink = ({ style, link}) => {
         ...style
     }}
     >
-     <span style={{verticalAlign:'middle'}}>View</span> <ArrowIcon className="project-impact__view__icon"/>
+     <span style={{verticalAlign:'middle'}}>View</span> <ArrowIcon className="view__icon"/>
     </p>
   )
 }

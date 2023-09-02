@@ -10,6 +10,7 @@ import {
 import './styles.scss';
 import constants from './utils/constants';
 import Planning from './sections/Planning/Planning';
+import Projects from './sections/Projects/Projects';
 
 const App = () => {
   const {quoteContent,quoteAuthor,quoteDescription} = constants.homepage;
@@ -27,6 +28,9 @@ const App = () => {
           />
           <Planning />
           <ContactUs />
+      </div>
+      <div className='app'>
+         <Projects />
       </div>
     </div>
   )
