@@ -1,9 +1,10 @@
 import React from 'react'
+import { Link } from "../../modules/Router";
 
-const NavItem = ({label, to}) => {
+const NavItem = ({children, to}) => {
   return (
     <>
-        <a className='header__nav__nav-item' href={to}>{label}</a>
+        <Link className='header__nav__nav-item' to={to}>{children}</Link>
     </>
   )
 }
