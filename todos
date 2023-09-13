@@ -1,4 +1,8 @@
 
+* the quotes section in firefox extends beyond the viewport on the right side (changing width to 100% might help along with moving the padding to a new, lower level container)
+
+* add icons for offering section
+
 * make header sticky
     - DONE
 * the hover state on impact cards feels very jittery

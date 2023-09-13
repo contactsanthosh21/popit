@@ -35,14 +35,15 @@ const Header = () => {
   return (
     <div className={`header ${opaqueHeader ? "opaque " : ""}`} ref={headerRef}>
       <div className="header__logo app-logo">
-        <a href="/">
+        <NavItem to="/">
           <img src={appLogo} alt="app logo" />
-        </a>
+        </NavItem>
       </div>
       <div className="header__nav">
-        <NavItem label="Projects" to="#" />
-        <NavItem label="About" to="#" />
-        <NavItem label="Contact Us" to="#" />
+        <NavItem to="#">Projects</NavItem>
+        <NavItem to="/about">About</NavItem>
+        <a className='header__nav__nav-item' href="#contact-us">Contact Us</a>
+        {/* <NavItem label="Contact Us" to="#contact-us" /> */}
       </div>
     </div>
   );
