@@ -1,0 +1,88 @@
+@import "../../variables.scss";
+
+.projects-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 5rem;
+    .project{ 
+        position: relative;
+        flex: 45%;
+        border-radius: 1.25rem;
+        .wrapper{
+            padding: 5rem 0 0 3rem;
+         }
+        &:nth-child(1){
+            background: #E4F4E2;
+            .pixel{
+                max-width: 78%;
+                position: absolute;
+                bottom: 0;
+                right:2rem;
+            }
+            .ellipse{
+                max-width: 75%;
+                margin: 3rem auto;
+                display: block;
+            }
+        }
+        &:nth-child(2){
+            background: #F6ECF6;
+            .mask{
+                max-width: 100%;
+                margin-top: 10rem;
+            }
+        }
+        &:nth-child(3){
+            background: #EAF0FF;
+            overflow: hidden;
+            .group{
+                max-width: 27%;
+                position: absolute;
+                bottom: 9rem;
+                left: -4.5rem;
+            }
+            .groupOne{
+                max-width: 68%;
+                position: relative;
+                top: 6.5rem;
+                float: right;
+                margin-right: 2rem;
+            }
+        }
+        &:nth-child(4){
+            background: #FFF9E7;
+            overflow: hidden;
+            .clock{
+                position: absolute;
+                right: -4rem;
+                max-width: 23%;
+                bottom: 23rem;
+            }
+            .groupTwo{
+                max-width: 84%;
+                margin: 0 auto;
+                position: relative;
+                top: 9rem;
+                display: block;
+            }
+        }
+        .view__icon{
+            fill: $color-popit;
+            vertical-align: middle;
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+    }
+}
+
+
+@media screen 
+  and (max-device-width: 900px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    .projects-container{
+        .project{
+            flex: 50%;
+        }
+    }
+}
