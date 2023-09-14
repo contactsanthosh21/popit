@@ -44,7 +44,7 @@ const ProjectsImpact = () => {
             </div>
         <Button 
             className='projects-impact__button'
-            href="#project-page"
+            href="projects"
         >
             View All casestudies
         </Button>

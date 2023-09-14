@@ -16,6 +16,7 @@ const Offerings = () => {
                 <OfferingCard 
                     heading={card.title}
                     text={card.description}
+                    image={card.image}
                 />
               ))   
             }

@@ -1,0 +1,21 @@
+
+.meet-team{
+    margin-top: 12rem;
+    p{
+        text-align: justify;
+        margin-top: 4rem;
+        text-align-last: center;
+    }
+    
+    .meet-team__contact{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3rem;
+        justify-content: center;
+        margin: 7rem 0rem;
+        img{
+            width: 25rem;
+        }
+    }
+}
+

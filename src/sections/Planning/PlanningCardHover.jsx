@@ -7,7 +7,7 @@ const PlanningCardHover = ({children,className,toggle,setToggle}) => {
   return (
     <div className={className}
     style={{
-        width: "21rem",
+        width: "18rem",
         boxShadow: "0px 4px 24px 0px grey", //#F1DDE4
         background: "#EB004B",
         border: "1px solid #EBEBEB",
@@ -16,7 +16,7 @@ const PlanningCardHover = ({children,className,toggle,setToggle}) => {
         cursor:"pointer",
         marginTop: "4.5rem",
         zIndex: 20,
-        height:"20rem",
+        height:"22rem",
         ...style
     }}
     onMouseLeave={e => {

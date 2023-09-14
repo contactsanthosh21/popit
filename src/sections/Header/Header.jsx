@@ -40,7 +40,7 @@ const Header = () => {
         </NavItem>
       </div>
       <div className="header__nav">
-        <NavItem to="#">Projects</NavItem>
+        <NavItem to="/projects">Projects</NavItem>
         <NavItem to="/about">About</NavItem>
         <a className='header__nav__nav-item' href="#contact-us">Contact Us</a>
         {/* <NavItem label="Contact Us" to="#contact-us" /> */}
