@@ -8,7 +8,7 @@ const Heading = ({ children, className, size }) => {
     case "small": size = "small"; break;
     default: size = "large"; break;
   }
-  className += ` heading ${size}`;
+  className = (className ? `${className} ` : '' ) + `heading ${size}`;
   return <div className={className}>{children}</div>;
 };
 
