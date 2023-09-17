@@ -15,7 +15,7 @@ var Clock = require('../../assets/clock-timer.png');
 
 const Projects = () => {
   return (
-    <div className='section'>
+    <div className='projects section'>
     <Heading>Projects</Heading>
     <div className='projects-container'>
         <div className='project'>

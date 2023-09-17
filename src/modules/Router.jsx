@@ -19,10 +19,6 @@ const Router = ({children}) => {
     }
 
     React.useEffect(() => {
-        console.log('setting currentPath ', currentPath)
-    }, [currentPath])
-
-    React.useEffect(() => {
         window.addEventListener('navigate', handleNavigation)
         window.addEventListener('popstate', handleNavigation)
 
@@ -50,6 +46,7 @@ const Route = ({path, children}) => {
     React.useEffect(() => {
         if(currentPath === path){
             setMatchPath(true);
+            window.scrollTo(0,0)
         }
         else{
             setMatchPath(false)
@@ -65,6 +62,12 @@ const Route = ({path, children}) => {
 const Link = ({to, className='', children}) => {
     function handleClick(e){
         e.preventDefault();
+        // since Link currently handles only path names (and not hash and search query),
+        // we can safely check and handle if path is destination path is same as the current
+        if(window.location.pathname === to){
+            // no change, just scroll to the top
+            window.scrollTo(0,0)
+        }
         window.history.pushState({}, '', to);
         const navigationEvent = new PopStateEvent('navigate')
         window.dispatchEvent(navigationEvent)
