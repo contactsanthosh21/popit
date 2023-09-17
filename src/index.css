@@ -11,9 +11,9 @@ body.waiting * {
     cursor: progress !important;
 }
 
-.project-impact__view__icon{
+/* .project-impact__view__icon{
     fill: $color-popit;
     vertical-align: middle;
     width: 1.5rem;
     height: 1.5rem;
-}
+} */

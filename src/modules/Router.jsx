@@ -7,6 +7,7 @@
 */
 
 import React from 'react'
+import './Router.scss'
 
 const routerContext = React.createContext();
 
@@ -59,7 +60,19 @@ const Route = ({path, children}) => {
   )
 }
 
-const Link = ({to, className='', children}) => {
+const Link = ({to, className, children}) => {
+    const {currentPath} = React.useContext(routerContext);
+    const [active, setActive] = React.useState(false);
+
+    React.useEffect(() => {
+        if(currentPath === to){
+            setActive(true);
+        }
+        else{
+            setActive(false);
+        }
+    })
+
     function handleClick(e){
         e.preventDefault();
         // since Link currently handles only path names (and not hash and search query),
@@ -72,6 +85,8 @@ const Link = ({to, className='', children}) => {
         const navigationEvent = new PopStateEvent('navigate')
         window.dispatchEvent(navigationEvent)
     }
+
+    className = (className ? `${className} nav-link`: 'nav-link') + (active ? ' active' : '');
 
     return <a className={className} href={to} onClick={handleClick}>{children}</a>
 }

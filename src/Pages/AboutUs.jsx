@@ -2,7 +2,8 @@ import React from "react";
 import {
     Quote,
     ContactUs,
-    MeetTeam
+    MeetTeam,
+    Values
   } from '../sections';
 import constants from "../utils/constants";
 const {aboutQuoteContent,aboutQuoteAuthor} = constants.aboutpage;
@@ -10,6 +11,7 @@ const {aboutQuoteContent,aboutQuoteAuthor} = constants.aboutpage;
 const AboutUs = () => {
     return (
         <>
+            <Values />
             <Quote quoteContent={aboutQuoteContent} quoteAuthor={aboutQuoteAuthor} />
             <MeetTeam />
             <ContactUs />
