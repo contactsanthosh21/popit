@@ -3,6 +3,8 @@
 
 * Remove the background image on projects page
 
+* Projects section on the projects page is not marked as a section hence doesn't have a margin-top. I think it is inconsistent.
+
 * add icons for offering section
     - DONE
 * make header sticky

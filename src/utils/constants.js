@@ -84,6 +84,38 @@ const constants = {
             description: "Design complete set of standards, components & patterns , to empower your design to scale flexibly",
             image: require("../assets/Group 4.png")
         }
+    ],
+    values:[
+        {
+            title: "Empathy",
+            description: "As designers , we believe empathy is the cornerstone of design",
+            image: require("../assets/empathy_icon.png")
+        },
+        {
+            title: "Synergy",
+            description: "Together we are always better... True synergy is only possible with open minds",
+            image: require("../assets/synergy_icon.png")
+        },
+        {
+            title: "Passion",
+            description: "No great work can be done without passion and we always strive to keep that burning ...",
+            image: require("../assets/passion_icon.png")
+        },
+        {
+            title: "Curiosity",
+            description: "Stay hungry, stay curious is our motto as it is breeds new ideas",
+            image: require("../assets/curiosity_icon.png")
+        },
+        {
+            title: "Integrity",
+            description: "We believe our honest efforts and integrity are our best PR",
+            image: require("../assets/integrity_icon.png")
+        },
+        {
+            title: "Persistence",
+            description: "We always persevere to give our best ... every single time",
+            image: require("../assets/persistence_icon.png")
+        },
     ]
 
 }
