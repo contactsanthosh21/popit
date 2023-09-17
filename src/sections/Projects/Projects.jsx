@@ -15,7 +15,7 @@ var Clock = require('../../assets/clock-timer.png');
 
 const Projects = () => {
   return (
-    <>
+    <div className='section'>
     <Heading>Projects</Heading>
     <div className='projects-container'>
         <div className='project'>
@@ -62,7 +62,7 @@ const Projects = () => {
             <ImageCard className="groupTwo" src={GroupTwo} alt= "GroupTwo" />
         </div>
     </div>
-    </>
+    </div>
   )
 }
 
