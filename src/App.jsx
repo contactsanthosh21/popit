@@ -12,9 +12,11 @@ import './styles.scss';
 import { Router, Route } from './modules/Router';
 import constants from './utils/constants';
 import Projects from './sections/Projects/Projects';
+import MeetTeam from './sections/MeetTeam/MeetTeam';
 
 const App = () => {
   const {quoteContent,quoteAuthor,quoteDescription} = constants.homepage;
+  const {aboutQuoteContent,aboutQuoteAuthor} = constants.aboutpage;
   return (
     <Router>
       <div className='container' id="container" >
@@ -34,10 +36,19 @@ const App = () => {
           </div>
         </Route>
         <Route path="/about">
-          <h1>About Us (work in progress)</h1>
+          <div className='app'>
+              <Quote
+                quoteContent={aboutQuoteContent} 
+                quoteAuthor={aboutQuoteAuthor} 
+              />
+             <MeetTeam />  
+             <ContactUs />
+          </div>
         </Route>
         <Route path="/projects">
-          <Projects />
+          <div className='app'>
+            <Projects />
+          </div>
         </Route>
       </div>
     </Router>

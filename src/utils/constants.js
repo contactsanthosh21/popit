@@ -1,4 +1,8 @@
 const constants = {
+    aboutpage:{
+        aboutQuoteContent: "There are no rockstars in collaborative design",
+        aboutQuoteAuthor: "- Will Evans",
+    },
     homepage:{
         quoteContent: "Simplicity is the ultimate sophistication",
         quoteAuthor: "- Leonardo Da Vinci",
@@ -62,21 +66,26 @@ const constants = {
     offering : [
         {
             title:"End to end UX consulting",
-            description: "From Discovery of the problem to Research, Strategy, Design and till Delivery of the product."
+            description: "From Discovery of the problem to Research, Strategy, Design and till Delivery of the product.",
+            image: require("../assets/Group 1.png")
         },
         {
             title:"Branding & Illustrations",
-            description: "Creating distinct Identity and custom illustrations for Products & Services"
+            description: "Creating distinct Identity and custom illustrations for Products & Services",
+            image: require("../assets/Group 2.png")
         },
         {
             title:"Strategic consulting",
-            description: "Solve Business problems with a User Centric mindset to help achieve your success metrics"
+            description: "Solve Business problems with a User Centric mindset to help achieve your success metrics",
+            image: require("../assets/Group 3.png")
         },
         {
             title:"Design Systems",
-            description: "Design complete set of standards, components & patterns , to empower your design to scale flexibly"
+            description: "Design complete set of standards, components & patterns , to empower your design to scale flexibly",
+            image: require("../assets/Group 4.png")
         }
     ]
+
 }
 
 export default constants;
