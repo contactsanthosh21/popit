@@ -1,6 +1,7 @@
 import React from "react";
 import NavItem from "./NavItem";
 import "./Header.scss";
+import { slide as Menu } from 'react-burger-menu'
 
 var appLogo = require("../../assets/app-logo.png");
 
@@ -15,6 +16,10 @@ const Header = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   });
+
+  const showSettings = (e) =>{
+    e.preventDefault();
+  }
 
   const handleScroll = (e) => {
     /*
@@ -44,6 +49,13 @@ const Header = () => {
         <NavItem to="/about">About</NavItem>
         <a className='header__nav__nav-item' href="#contact-us">Contact Us</a>
         {/* <NavItem label="Contact Us" to="#contact-us" /> */}
+      </div>
+      <div className="header__nav__mobile">
+      <Menu right>
+      <NavItem to="/projects">Projects</NavItem>
+        <NavItem to="/about">About</NavItem>
+        <a className='header__nav__nav-item' href="#contact-us">Contact Us</a>
+      </Menu>
       </div>
     </div>
   );

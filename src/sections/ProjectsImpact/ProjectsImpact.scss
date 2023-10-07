@@ -70,3 +70,19 @@
         }
     }
 }
+
+
+@media only screen   
+and (min-device-width : 320px)   
+and (max-device-width : 480px) {
+    .projects-impact__wrapper{
+        .column{
+            p.description{
+                width: 30rem;
+            }
+            .image{
+                width:30rem;
+            }
+        }
+    }
+}

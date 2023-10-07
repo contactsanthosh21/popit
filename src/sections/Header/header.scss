@@ -83,3 +83,56 @@
         }
     }
 }
+
+.header__nav__mobile{
+    display: none;
+}
+
+@media only screen   
+and (min-device-width : 320px)   
+and (max-device-width : 480px) {
+    .header .header__nav ,.header.opaque .header__nav{
+       display: none;
+    }
+    .header__nav__mobile{
+        display: block;
+    }
+    .bm-burger-bars{
+        background: $color-black;
+        width: 10%;
+        height: 3%!important;
+        right: 8% !important;
+        left: auto!important;
+        &:nth-child(1){
+            top: 39% !important;
+        }
+        &:nth-child(2){
+            top: 45% !important;
+        }
+        &:nth-child(3){
+            top: 51% !important;
+        }
+    }
+    .bm-overlay{
+        height: auto!important;
+    }
+    .header__nav__nav-item{
+        display: block;
+        font-size: 1.8rem;
+        padding: 1.5rem 2rem;  
+    }
+    .bm-item-list{
+        height: auto !important;
+        background: white;
+        margin-right: 2.2rem;
+        border-radius: 0.5rem;
+        margin-top: 2rem;
+    }
+    #react-burger-menu-btn{
+        left: auto !important;
+        right: 2rem !important;
+        top: 4rem !important;
+        width: 5rem !important;
+        height: 4rem !important;
+    }
+}
