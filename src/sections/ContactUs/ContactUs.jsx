@@ -24,7 +24,7 @@ function useEmail(formId){
     e.preventDefault();
     const form = document.getElementById(formId)
     const formData = new FormData(form)
-    const url = 'https://formsubmit.co/Nagaraj.v@popitstudio.com';
+    const url = 'https://formsubmit.co/feab5c5a2d2c4a31eae7077dc8ec8fd6';
     setCursorToProgress();
     fetch(
       url,
