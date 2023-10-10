@@ -17,7 +17,7 @@ p {
 
 .container {
     position: relative;
-    width: fit-content;
+    width: 100vw;
     background-image: url('./assets/background-image.png');
     background-position-x: right;
     background-repeat: no-repeat;
@@ -32,4 +32,13 @@ p {
 
 .section {
   margin: 9.125rem 0 0 0;
+}
+
+@media only screen   
+and (min-device-width : 320px)   
+and (max-device-width : 900px) {
+  .container {
+    width: fit-content;
+}
+
 }

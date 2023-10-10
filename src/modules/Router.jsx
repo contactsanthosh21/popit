@@ -60,7 +60,7 @@ const Route = ({path, children}) => {
   )
 }
 
-const Link = ({to, className, children}) => {
+const Link = ({to, className,handleclosemenu, children}) => {
     const {currentPath} = React.useContext(routerContext);
     const [active, setActive] = React.useState(false);
 
@@ -75,6 +75,7 @@ const Link = ({to, className, children}) => {
 
     function handleClick(e){
         e.preventDefault();
+
         // since Link currently handles only path names (and not hash and search query),
         // we can safely check and handle if path is destination path is same as the current
         if(window.location.pathname === to){
@@ -84,6 +85,8 @@ const Link = ({to, className, children}) => {
         window.history.pushState({}, '', to);
         const navigationEvent = new PopStateEvent('navigate')
         window.dispatchEvent(navigationEvent)
+        handleclosemenu && handleclosemenu();
+
     }
 
     className = (className ? `${className} nav-link`: 'nav-link') + (active ? ' active' : '');

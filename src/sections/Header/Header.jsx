@@ -7,6 +7,17 @@ var appLogo = require("../../assets/app-logo.png");
 
 const Header = () => {
   const [opaqueHeader, setOpaqueHeader] = React.useState(false);
+
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+
+  const handleCloseMenu = () => {
+    setIsMenuOpen(false);
+  };
+
+  const handleStateChange = (state) => {
+    setIsMenuOpen(state.isOpen);
+  };
+
   const headerRef = React.useRef(null);
 
   React.useEffect(() => {
@@ -16,6 +27,7 @@ const Header = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   });
+
 
   const showSettings = (e) =>{
     e.preventDefault();
@@ -51,10 +63,10 @@ const Header = () => {
         {/* <NavItem label="Contact Us" to="#contact-us" /> */}
       </div>
       <div className="header__nav__mobile">
-      <Menu right>
-      <NavItem to="/projects">Projects</NavItem>
-        <NavItem to="/about">About</NavItem>
-        <a className='header__nav__nav-item' href="#contact-us">Contact Us</a>
+      <Menu isOpen={isMenuOpen} onStateChange={handleStateChange} right>
+        <NavItem to="/projects" handleclosemenu = {handleCloseMenu}>Projects</NavItem>
+        <NavItem to="/about" handleclosemenu = {handleCloseMenu}>About</NavItem>
+        <a className='header__nav__nav-item' href="#contact-us" onClick = {() => handleCloseMenu()}>Contact Us</a>
       </Menu>
       </div>
     </div>
