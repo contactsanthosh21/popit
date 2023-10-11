@@ -20,7 +20,7 @@
  
         display: grid;
         grid-template-columns: repeat(3,1fr);
-        grid-gap: 8.625rem
+        grid-gap: 8.625rem;
 
         // display: flex;
         // flex-direction: column;
@@ -29,7 +29,7 @@
     }
 
     /* Media Query for 3x2 Grid at a specific breakpoint */
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 900px) {
         .values__info {
         grid-template-columns: repeat(2, 1fr);
         }
@@ -39,6 +39,8 @@
     @media screen and (max-width: 480px) {
         .values__info {
         grid-template-columns: 1fr;
+        padding: 4.25rem 3.375rem;
+        grid-gap: 5.625rem;
         }
     }
 }

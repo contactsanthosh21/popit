@@ -1,7 +1,30 @@
 @import "../../variables.scss";
 
-.hover-content p{
-    color: $color-white;
-    font-size: 1rem;
-    line-height: 2rem;
+.hover-content {
+    p{
+        color: $color-white;
+        font-size: 1rem;
+        line-height: 2rem;
+    }
 }
+
+@media only screen   
+and (-webkit-min-device-pixel-ratio: 1)  
+and (min-device-width : 768px)   
+and (max-device-width : 1007px) {
+    .hover-content {
+        width: 20rem!important;
+        height: 20rem!important;
+    }
+}
+
+@media only screen   
+and (min-device-width : 320px)   
+and (max-device-width : 480px) {
+    .hover-content{
+        width: 22rem!important;
+        margin: 3.5rem auto;
+        height: 19.5rem!important;
+    }
+}
+

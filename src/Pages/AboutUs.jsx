@@ -12,7 +12,7 @@ const AboutUs = () => {
     return (
         <>
             <Values />
-            <Quote quoteContent={aboutQuoteContent} quoteAuthor={aboutQuoteAuthor} />
+            <Quote quoteContent={aboutQuoteContent} quoteAuthor={aboutQuoteAuthor} className="aboutUs"/>
             <MeetTeam />
             <ContactUs />
         </>

@@ -38,3 +38,30 @@
         line-height: 2rem;
 }
 }
+
+@media only screen   
+and (-webkit-min-device-pixel-ratio: 1)  
+and (min-device-width : 768px)   
+and (max-device-width : 1007px) {
+    .quotes {
+        width: 102vw;
+        padding: 2rem 4rem;
+        left: calc(50% - 51vw);
+    }
+}
+
+@media only screen   
+and (min-device-width : 320px)   
+and (max-device-width : 480px) {
+    .quotes {
+        width: 112%;
+        padding: 2rem;
+        left: calc(50% - 66vw);
+        .quote-content{
+            font-size: 2.3rem;
+        }
+    }
+    .quotes.aboutUs {
+        left: calc(50% - 50vw);
+    }
+}
