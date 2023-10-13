@@ -2,7 +2,7 @@ import React from 'react';
 import {
   HomePage,
   AboutUs,
-  Projects
+  ProjectPage
 } from './Pages';
 import { Header } from './sections';
 import './styles.scss';
@@ -21,7 +21,7 @@ const App = () => {
               <AboutUs />
         </Route>
         <Route path="/projects">
-            <Projects />
+            <ProjectPage />
         </Route>
         </div>
       </div>
