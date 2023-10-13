@@ -3,7 +3,7 @@ import Heading from '../../components/Heading/Heading';
 import constants from '../../utils/constants';
 import './Values.scss';
 
-values = constants.values;
+const values = constants.values;
 
 const Values = () => {
   return (

@@ -2,6 +2,7 @@
   "name": "static-react",
   "version": "1.0.0",
   "description": "",
+  "homepage" : "http://popitstudio.com",
   "source": "/src/index.html",
   "scripts": {
     "start": "parcel",
@@ -18,7 +19,6 @@
   "bugs": {
     "url": "https://github.com/contactsanthosh21/static-react/issues"
   },
-  "homepage": "https://github.com/contactsanthosh21/static-react#readme",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.9.3",
     "parcel": "^2.9.3",

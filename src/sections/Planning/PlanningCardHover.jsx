@@ -3,7 +3,7 @@ import './PlanningCardHover.scss';
 
 const PlanningCardHover = ({children,className,toggle,setToggle}) => {
   className = 'planning-card__hover ' + className;
-  style =  toggle ? {display: 'block'} : {display : 'none'}; 
+  const style =  toggle ? {display: 'block'} : {display : 'none'}; 
   return (
     <div className={className}
     style={{

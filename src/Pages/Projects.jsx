@@ -1,7 +1,7 @@
 import React from 'react'
 import { Projects } from '../sections';
 
-const Projects = () => {
+const ProjectPage = () => {
   return (
     <>
         <Projects />
@@ -9,4 +9,4 @@ const Projects = () => {
   )
 }
 
-export default Projects
+export default ProjectPage
